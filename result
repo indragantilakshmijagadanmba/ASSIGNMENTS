@@ -1,0 +1,15 @@
+#student result
+sno=int(input('enter student number'))
+sname=input('enter student name')
+maths=int(input('enter maths marks'))
+chemistry=int(input('enter chemistry marks'))
+computer=int(input('enter computer marks'))
+telugu=int(input('enter telugu marks'))
+english=int(input('enter english marks'))
+crt=int(input('enter crt marks'))
+total=maths+chemistry+computer+telugu+english+crt
+avg=total/6
+if avg>60:
+  print('pass')
+else:
+   print('fail')
