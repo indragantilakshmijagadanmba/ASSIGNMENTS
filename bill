@@ -1,0 +1,35 @@
+#market bill
+rc=100
+wc=150
+sc=50
+oc=150
+sac=50
+cname=input('enter custmer name: ')
+cphno=int(input('enter custmer ph number:'))
+rcq=int(input('enter no of rice packets:'))
+wcq=int(input('enter no of wheat packets:'))
+scq=int(input('enter no of sugar packets:'))
+ocq=int(input('enter no of oil packets:'))
+sacq=int(input('enter no of salt packets:'))
+cc=input('enter coupon code')
+bill=(rc*rcq)+(wc*wcq)+(sc*scq)+(oc*ocq)+(sac*sacq)
+if bill>=5000:
+    cc=hello
+    dis=bill*20/100
+    tax=0
+elif bill>=3000:
+    cc= hi
+    dis=bill*15/100
+    tax=0
+elif bill>=2000:
+    cc=twinkle
+    dis=bill*10/100
+    tax=18/100
+elif bill>=1000:
+    cc=bill
+    dis=bill*5/100
+    tax=18/100
+else:
+    print('invalid coupon code')
+    mainbill=bill-dis+tax
+    print("bill smount",mainbill)
