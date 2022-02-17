@@ -1,0 +1,12 @@
+n=int(input())
+eventot= 0
+oddtot = 0
+ 
+for i in range(1, n+ 1):
+    if(i% 2 == 0):
+        eventot = eventot + i
+    else:
+        oddtot = oddtot + i
+ 
+print('sum of even numbers',eventot)
+print('sum of odd numbers',oddtot)
