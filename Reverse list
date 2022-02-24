@@ -1,0 +1,3 @@
+list=[2,3,5]
+list.reverse()
+print("reversed list;",list)
